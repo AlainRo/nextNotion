@@ -7,7 +7,7 @@ module.exports = {
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Mon joli site',
+  name: 'Un site de test Notion Nextjs',
   domain: 'perceptible.fr',
   author: 'Alain Roan',
 

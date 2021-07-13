@@ -12,8 +12,8 @@ module.exports = {
   author: 'Alain Roan',
 
   // open graph metadata (optional)
-  description: 'Example site description',
-  socialImageTitle: 'Transitive Bullshit',
+  description: "Site de test de l'automatisation Notion",
+  socialImageTitle: 'Perceptible.fr',
   socialImageSubtitle: 'Hello World! 👋',
 
   // social usernames (optional)

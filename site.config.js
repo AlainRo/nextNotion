@@ -1,6 +1,7 @@
 module.exports = {
   // where it all starts -- the site's root Notion page (required)
-  rootNotionPageId: '872d07bf660b4e28b403b8a9d5bd179e',
+  //rootNotionPageId: '872d07bf660b4e28b403b8a9d5bd179e', // espace pobox
+  rootNotionPageId: 'Nextjs-Notion-Test-ec4e155f14cf4e1ebf236af700c6bfe7',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)

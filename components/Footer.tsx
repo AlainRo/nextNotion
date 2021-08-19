@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaLinkedin, FaYoutube, FaDiscord } from 'react-icons/fa'
 import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
 import * as config from 'lib/config'
 
@@ -33,9 +33,9 @@ export const Footer: React.FC<{
           <a
             className={styles.toggleDarkMode}
             onClick={toggleDarkModeCb}
-            title='Tottle dark mode'
+            title='Toggle dark/light mode'
           >
-            {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+            {!isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         </div>
       ) : null}
@@ -69,11 +69,34 @@ export const Footer: React.FC<{
           <a
             className={styles.linkedin}
             href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
+            title={`LinkedIn ${config.linkedin}`}
             target='_blank'
             rel='noopener noreferrer'
           >
             <FaLinkedin />
+          </a>
+        )}
+
+        {config.youtube && (
+          <a
+            className={styles.youtube}
+            href={`https://www.youtube.com/${config.youtube}`}
+            title={`Youtube ${config.youtube}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaYoutube />
+          </a>
+        )}
+        {config.discord && (
+          <a
+            className={styles.discord}
+            href={`${config.discord}`}
+            title={`Discord ${config.discord}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaDiscord />
           </a>
         )}
       </div>
